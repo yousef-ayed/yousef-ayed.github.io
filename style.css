@@ -1,204 +1,256 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Youssef Ayed | Network Cybersecurity Engineer</title>
-    
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
-    
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    
-    <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
+/*
+  Dark Mode Theme for Portfolio
+  Color Palette:
+    - Background: #0a192f (Navy)
+    - Lighter Background (Cards): #112240 (Light Navy)
+    - Primary Accent: #64ffda (Teal/Cyan)
+    - Heading Text: #ccd6f6 (Light Slate)
+    - Body Text: #8892b0 (Slate)
+    - Hover/Shadow: rgba(100, 255, 218, 0.1)
+*/
 
-    <header class="hero">
-        <div class="container">
-            <div class="hero-content">
-                <img src="images/profile.jpg" alt="Youssef Ayed's Profile Picture" class="profile-pic">
-                <h1>Youssef Ayed</h1>
-                <p class="tagline">Network Cybersecurity Engineer</p>
-                <p class="quote">"Smarter, simpler cybersecurity—protection without complexity."</p>
-                <div class="social-links">
-                    <a href="https://www.linkedin.com/in/youssefayed" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-                    <a href="https://github.com/yousef-ayed" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
-                    <a href="mailto:youssefayed404@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
-                </div>
-            </div>
-        </div>
-    </header>
+/* General Body & Typography */
+body {
+    font-family: 'Inter', sans-serif; /* Updated font for body text */
+    margin: 0;
+    padding: 0;
+    background-color: #0a192f; /* Dark Navy Background */
+    color: #8892b0; /* Slate color for text */
+    direction: ltr;
+    line-height: 1.7;
+    font-size: 16px;
+}
 
-    <nav class="navbar">
-        <div class="container">
-            <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#education">Education</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#experience">Experience</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </div>
-    </nav>
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
 
-    <main class="container">
-        
-        <section id="about" class="card">
-            <h2><i class="fas fa-user-alt icon"></i> About Me</h2>
-            <p>
-                I am Youssef Ayed, a Network Cybersecurity Engineer from Egypt, passionate about securing digital infrastructures and defending networks against modern threats. I have hands-on experience with Cisco (CCNA), configuring FortiGate & FortiManager firewalls, and conducting vulnerability assessments using tools like Kali Linux and Wireshark. With strong problem-solving and communication skills, I aim to deliver secure, scalable solutions while staying current with the latest cyber defense techniques.
-            </p>
-        </section>
+h1, h2, h3 {
+    font-family: 'Poppins', sans-serif;
+    color: #ccd6f6; /* Light slate for headings */
+    margin-bottom: 15px;
+    font-weight: 600;
+}
 
-        <section id="education" class="card">
-            <h2><i class="fas fa-graduation-cap icon"></i> Education & Certifications</h2>
-            <div class="grid education-grid">
-                <div class="grid-item">
-                    <h3><i class="fas fa-book-open"></i> Education</h3>
-                    <p><strong>B.Sc. in Computer Science & Information Technology</strong><br>Egyptian E-Learning University (EELU), 2023 - 2027</p>
-                </div>
-                <div class="grid-item">
-                    <h3><i class="fas fa-certificate"></i> Professional Certifications</h3>
-                    <ul>
-                        <li><i class="fas fa-check-circle"></i> CCNA (Cisco Certified Network Associate) - (Jan 2025)</li>
-                        <li><i class="fas fa-check-circle"></i> FortiGate Certification - (Sep 2025)</li>
-                        <li><i class="fas fa-check-circle"></i> FortiManager (Fortinet) - (Nov 2025)</li>
-                        <li><i class="fas fa-check-circle"></i> CompTIA Security+ - (Nov 2025)</li>
-                        <li><i class="fas fa-check-circle"></i> Ethical Hacking / Penetration Testing - (Dec 2025)</li>
-                    </ul>
-                </div>
-            </div>
-        </section>
+h2 {
+    font-size: 2.2rem;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #233554; /* Darker border for subtlety */
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
 
-        <section id="skills" class="card">
-            <h2><i class="fas fa-tools icon"></i> Skills & Tools</h2>
-            <div class="grid skills-grid">
-                <div class="grid-item">
-                    <h3><i class="fas fa-network-wired"></i> Networking & Security</h3>
-                    <ul>
-                        <li><i class="fas fa-long-arrow-alt-right"></i> <strong>Routing & Switching:</strong> BGP, OSPF, EIGRP, VLAN, STP</li>
-                        <li><i class="fas fa-long-arrow-alt-right"></i> <strong>Security Protocols:</strong> IPSec, SSL/TLS, IEEE 802.1X</li>
-                        <li><i class="fas fa-long-arrow-alt-right"></i> <strong>Network Design & Troubleshooting:</strong> CCNA-level expertise</li>
-                        <li><i class="fas fa-long-arrow-alt-right"></i> <strong>Threat Management:</strong> Vulnerability Assessment, Penetration Testing</li>
-                    </ul>
-                </div>
-                <div class="grid-item">
-                    <h3><i class="fas fa-code"></i> Programming & Automation</h3>
-                    <ul>
-                        <li><i class="fas fa-long-arrow-alt-right"></i> <strong>Python:</strong> Security Automation, Log Analysis</li>
-                        <li><i class="fas fa-long-arrow-alt-right"></i> <strong>Bash Scripting:</strong> Linux Automation</li>
-                        <li><i class="fas fa-long-arrow-alt-right"></i> <strong>APIs:</strong> Device Interaction & Integration</li>
-                        <li><i class="fas fa-long-arrow-alt-right"></i> <strong>Git:</strong> Version Control & Collaboration</li>
-                    </ul>
-                </div>
-                 <div class="grid-item">
-                    <h3><i class="fas fa-firewall"></i> Security Testing & Analysis Tools</h3>
-                     <ul>
-                        <li><i class="fas fa-long-arrow-alt-right"></i> <strong>Fortinet:</strong> FortiGate (IPS, Antivirus, Web Filtering), FortiManager</li>
-                        <li><i class="fas fa-long-arrow-alt-right"></i> <strong>Palo Alto (Learning):</strong> Next-Gen Firewall Concepts</li>
-                        <li><i class="fas fa-long-arrow-alt-right"></i> <strong>Cisco ASA (Familiar):</strong> Basic Configuration & Management</li>
-                    </ul>
-                </div>
-                 <div class="grid-item">
-                    <h3><i class="fas fa-handshake"></i> Soft Skills</h3>
-                     <ul>
-                        <li><i class="fas fa-long-arrow-alt-right"></i> Client Communication</li>
-                        <li><i class="fas fa-long-arrow-alt-right"></i> Problem Solving</li>
-                        <li><i class="fas fa-long-arrow-alt-right"></i> Project Management</li>
-                        <li><i class="fas fa-long-arrow-alt-right"></i> Self-Learning</li>
-                    </ul>
-                </div>
-            </div>
-        </section>
+h2 .icon {
+    color: #64ffda; /* Accent color */
+}
 
-        <section id="experience" class="card">
-            <h2><i class="fas fa-briefcase icon"></i> Experience</h2>
-            <div class="experience-item">
-                <h3>Freelance Network & Cybersecurity Engineer</h3>
-                <p class="date">July 2025 – Present</p>
-                </div>
-        </section>
-        
-        
-        <section id="services" class="card">
-            <h2><i class="fas fa-hand-holding-usd icon"></i> My Services</h2>
-            <div class="grid services-grid">
-                <div class="service-item">
-                    <i class="fas fa-shield-alt fa-2x"></i>
-                    <h3>Network Security Design & Implementation</h3>
-                </div>
-                <div class="service-item">
-                    <i class="fas fa-cogs fa-2x"></i>
-                    <h3>Security Automation & Scripting</h3>
-                </div>
-                <div class="service-item">
-                    <i class="fas fa-server fa-2x"></i>
-                    <h3>Firewall Configuration & Management</h3>
-                </div>
-                <div class="service-item">
-                    <i class="fas fa-lock fa-2x"></i>
-                    <h3>Secure Remote Access (VPN Setup)</h3>
-                </div>
-                <div class="service-item">
-                    <i class="fas fa-headset fa-2x"></i>
-                    <h3>Technical Consulting & Support</h3>
-                </div>
-            </div>
-        </section>
+/* Header/Hero Section */
+.hero {
+    background: transparent; /* Remove gradient, rely on body background */
+    padding: 80px 0;
+    text-align: center;
+}
 
-        <section id="projects" class="card">
-            <h2><i class="fas fa-project-diagram icon"></i> Selected Projects</h2>
-            <div class="grid projects-grid">
-                <div class="project-item">
-                    <img src="images/project1.jpg" alt="VLAN Project">
-                    <div class="project-content">
-                        <h3>VLAN and Inter-VLAN Routing with FortiGate</h3>
-                        <p>Configured VLANs on switches and enabled routing between them, integrating a FortiGate firewall to apply security policies.</p>
-                        <a href="#" class="btn-project" target="_blank">View Project <i class="fas fa-arrow-right"></i></a>
-                    </div>
-                </div>
-                <div class="project-item">
-                    <img src="images/project2.jpg" alt="VPN Project">
-                    <div class="project-content">
-                        <h3>Implement VPN Solutions with FortiGate</h3>
-                        <p>Configured SSL VPN and IPsec VPN on FortiGate, integrating VPN traffic with SD-WAN for optimized performance.</p>
-                        <a href="#" class="btn-project" target="_blank">View Project <i class="fas fa-arrow-right"></i></a>
-                    </div>
-                </div>
-                </div>
-        </section>
+.profile-pic {
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    border: 4px solid #64ffda; /* Accent color border */
+    object-fit: cover;
+    margin-bottom: 20px;
+    box-shadow: 0 0 25px rgba(100, 255, 218, 0.2); /* Glow effect */
+}
 
-        <section id="achievements" class="card">
-            <h2><i class="fas fa-trophy icon"></i> Achievements</h2>
-            <ul>
-                <li><i class="fas fa-star"></i> <strong>Implemented Secure VPN Solutions:</strong> Configured SSL and IPsec VPNs with FortiGate.</li>
-                <li><i class="fas fa-star"></i> <strong>Designed Secure Networks:</strong> Built a simulated enterprise network with VLANs and OSPF.</li>
-                <li><i class="fas fa-star"></i> <strong>Protected Systems:</strong> Secured multiple client environments from advanced cyber threats.</li>
-            </ul>
-        </section>
+.hero h1 {
+    font-size: 3.5rem;
+    margin: 10px 0;
+    color: #fff;
+    font-weight: 700;
+}
 
-        <section id="contact" class="card">
-            <h2><i class="fas fa-headset icon"></i> Contact Me</h2>
-            <p>Feel free to reach out via the following platforms or by email. I'm happy to discuss opportunities or answer your questions.</p>
-            <div class="contact-info">
-                <p><i class="fas fa-envelope"></i> Email: <a href="mailto:youssefayed404@gmail.com">youssefayed404@gmail.com</a></p>
-                <div class="social-links-bottom">
-                    <a href="https://www.linkedin.com/in/youssefayed" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in fa-2x"></i></a>
-                    <a href="https://github.com/yousef-ayed" target="_blank" aria-label="GitHub"><i class="fab fa-github fa-2x"></i></a>
-                </div>
-            </div>
-        </section>
-    </main>
+.hero .tagline {
+    font-size: 1.5rem;
+    color: #ccd6f6;
+    margin-bottom: 15px;
+}
 
-    <footer>
-        <div class="container">
-            <p>&copy; 2025 Youssef Ayed. All Rights Reserved.</p>
-        </div>
-    </footer>
+.hero .quote {
+    font-style: italic;
+    font-size: 1.1rem;
+    color: #8892b0;
+    margin-bottom: 30px;
+}
 
-</body>
-</html>
+.social-links a {
+    color: #ccd6f6;
+    font-size: 1.8rem;
+    margin: 0 12px;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.social-links a:hover {
+    color: #64ffda;
+    transform: translateY(-3px);
+}
+
+/* Navigation Bar */
+.navbar {
+    background: rgba(10, 25, 47, 0.85); /* Semi-transparent background */
+    backdrop-filter: blur(10px);
+    padding: 15px 0;
+    text-align: center;
+    border-bottom: 1px solid #233554;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+/* === START: CODE ADDED TO FIX ALIGNMENT === */
+.navbar ul {
+    list-style: none; /* Removes the dots */
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center; /* Centers the links horizontally */
+    flex-wrap: wrap;
+}
+
+.navbar ul li {
+    margin: 0 15px; /* Adds space between items */
+}
+/* === END: CODE ADDED TO FIX ALIGNMENT === */
+
+.navbar ul li a {
+    color: #ccd6f6;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1rem;
+    padding-bottom: 5px;
+    position: relative;
+    transition: color 0.3s ease;
+}
+
+.navbar ul li a:hover {
+    color: #64ffda;
+}
+
+/* Main Content Sections */
+main {
+    padding: 40px 0;
+}
+
+.card {
+    background: #112240; /* Lighter navy for cards */
+    padding: 35px;
+    margin-bottom: 30px;
+    border-radius: 8px;
+    box-shadow: none; /* Remove shadow, use background contrast */
+    border: 1px solid #233554;
+}
+
+/* Grid Layouts */
+.grid { display: grid; gap: 20px; margin-top: 25px; }
+.education-grid { grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); }
+.skills-grid { grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); }
+
+.grid-item {
+    background: transparent;
+    padding: 25px;
+    border-radius: 8px;
+    border: 1px solid #233554;
+    transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.grid-item:hover {
+    transform: translateY(-5px);
+    border-color: #64ffda;
+}
+
+.grid-item h3 {
+    color: #64ffda;
+    font-size: 1.4rem;
+}
+
+.grid-item ul li i { color: #64ffda; margin-top: 5px; }
+
+/* Experience Section */
+.experience-item {
+    background: transparent;
+    padding: 25px;
+    border-radius: 8px;
+    border-left: 4px solid #64ffda; /* Accent color on the left */
+    border-top: 1px solid #233554;
+    border-right: 1px solid #233554;
+    border-bottom: 1px solid #233554;
+}
+
+/* Services Section */
+.services-grid { grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); }
+.service-item {
+    background: #112240;
+    padding: 30px 20px;
+    border-radius: 8px;
+    border: 1px solid #233554;
+    text-align: center;
+    transition: transform 0.3s ease, border-color 0.3s ease;
+}
+.service-item:hover { transform: translateY(-8px); border-color: #64ffda; }
+.service-item i { color: #64ffda; margin-bottom: 15px; }
+.service-item h3 { color: #ccd6f6; font-size: 1.2rem; margin: 0; }
+
+/* Projects Section */
+.projects-grid { grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); }
+.project-item {
+    background: #112240;
+    border-radius: 8px;
+    border: 1px solid #233554;
+    overflow: hidden;
+    transition: transform 0.3s ease, border-color 0.3s ease;
+    display: flex;
+    flex-direction: column;
+}
+.project-item:hover { transform: translateY(-8px); border-color: #64ffda; }
+.project-item img { width: 100%; height: 220px; object-fit: cover; opacity: 0.7; transition: opacity 0.3s ease; }
+.project-item:hover img { opacity: 1; }
+.project-content { padding: 20px; flex-grow: 1; }
+.btn-project {
+    display: inline-block;
+    background: transparent;
+    color: #64ffda;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    margin-top: 15px;
+    text-align: center;
+    border: 1px solid #64ffda;
+    transition: background-color 0.3s ease;
+}
+.btn-project:hover { background-color: rgba(100, 255, 218, 0.1); }
+
+/* Achievements Section */
+#achievements ul li i { color: #64ffda; }
+
+/* Contact Section */
+.contact-info a { color: #64ffda; text-decoration: none; }
+.contact-info a:hover { text-decoration: underline; }
+.social-links-bottom a { color: #ccd6f6; }
+.social-links-bottom a:hover { color: #64ffda; transform: translateY(-3px); }
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 30px;
+    background: transparent;
+    color: #8892b0;
+    font-size: 1rem;
+    margin-top: 40px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .hero h1 { font-size: 2.5rem; }
+    h2 { font-size: 1.8rem; }
+}
