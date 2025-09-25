@@ -1,211 +1,201 @@
 <!DOCTYPE html>
-<html lang="ar" dir="rtl">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Youssef Ayed | Network Cybersecurity Engineer</title>
-    <style>
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-            color: #333;
-            direction: rtl;
-        }
-        .container {
-            max-width: 960px;
-            margin: auto;
-            overflow: hidden;
-            padding: 0 20px;
-        }
-        header {
-            background: #333;
-            color: #fff;
-            padding: 2rem 0;
-            text-align: center;
-        }
-        header h1 {
-            margin: 0;
-            font-size: 2.5rem;
-        }
-        header p {
-            font-size: 1.2rem;
-        }
-        section {
-            padding: 20px;
-            margin-bottom: 20px;
-            background: #fff;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
-        }
-        h2 {
-            color: #333;
-            border-bottom: 2px solid #333;
-            padding-bottom: 10px;
-        }
-        .grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 20px;
-        }
-        .grid-item {
-            background: #f9f9f9;
-            padding: 15px;
-            border-radius: 5px;
-        }
-        ul {
-            list-style: none;
-            padding: 0;
-        }
-        ul li {
-            padding: 5px 0;
-        }
-        footer {
-            text-align: center;
-            padding: 20px;
-            background: #333;
-            color: #fff;
-        }
-        footer a {
-            color: #fff;
-            text-decoration: none;
-            margin: 0 10px;
-        }
-    </style>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
-    <header>
+    <header class="hero">
         <div class="container">
-            <h1>يوسف عايد</h1>
-            <p>مهندس شبكات وأمن سيبراني</p>
-            <em>"أمن سيبراني أذكى وأبسط - حماية بدون تعقيدات"</em>
+            <div class="hero-content">
+                <img src="images/profile.jpg" alt="Youssef Ayed's Profile Picture" class="profile-pic">
+                <h1>Youssef Ayed</h1>
+                <p class="tagline">Network Cybersecurity Engineer</p>
+                <p class="quote">"Smarter, simpler cybersecurity—protection without complexity."</p>
+                <div class="social-links">
+                    <a href="https://www.linkedin.com/in/youssefayed" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="https://github.com/yousef-ayed" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                    <a href="mailto:youssefayed404@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+                </div>
+            </div>
         </div>
     </header>
 
-    <div class="container">
-        <section id="about">
-            <h2>عني</h2>
+    <nav class="navbar">
+        <div class="container">
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="container">
+        
+        <section id="about" class="card">
+            <h2><i class="fas fa-user-alt icon"></i> About Me</h2>
             <p>
-                أنا يوسف عايد، مهندس شبكات وأمن سيبراني من مصر، شغوف بتأمين البنى التحتية الرقمية والدفاع عن الشبكات ضد التهديدات الحديثة. لدي خبرة عملية مع Cisco (CCNA)، وإعداد جدران الحماية FortiGate & FortiManager، وإجراء تقييمات للثغرات باستخدام أدوات مثل Kali Linux و Wireshark. بفضل مهاراتي القوية في حل المشكلات والتواصل، أهدف إلى تقديم حلول آمنة وقابلة للتطوير مع البقاء على اطلاع بأحدث أساليب الدفاع السيبراني.
+                I am Youssef Ayed, a Network Cybersecurity Engineer from Egypt, passionate about securing digital infrastructures and defending networks against modern threats. I have hands-on experience with Cisco (CCNA), configuring FortiGate & FortiManager firewalls, and conducting vulnerability assessments using tools like Kali Linux and Wireshark. With strong problem-solving and communication skills, I aim to deliver secure, scalable solutions while staying current with the latest cyber defense techniques.
             </p>
         </section>
 
-        <section id="education">
-            <h2>التعليم والشهادات</h2>
-            <div class="grid">
+        <section id="education" class="card">
+            <h2><i class="fas fa-graduation-cap icon"></i> Education & Certifications</h2>
+            <div class="grid education-grid">
                 <div class="grid-item">
-                    <h3>التعليم</h3>
-                    <p><strong>بكالوريوس علوم الحاسب وتكنولوجيا المعلومات</strong><br>الجامعة المصرية للتعلم الإلكتروني (EELU) 2023 - 2027</p>
+                    <h3><i class="fas fa-book-open"></i> Education</h3>
+                    <p><strong>B.Sc. in Computer Science & Information Technology</strong><br>Egyptian E-Learning University (EELU), 2023 - 2027</p>
                 </div>
                 <div class="grid-item">
-                    <h3>الشهادات المهنية</h3>
+                    <h3><i class="fas fa-certificate"></i> Professional Certifications</h3>
                     <ul>
-                        <li>CCNA (Cisco Certified Network Associate) - (يناير 2025)</li>
-                        <li>FortiGate Certification - (سبتمبر 2025)</li>
-                        <li>FortiManager (Fortinet) - (نوفمبر 2025)</li>
-                        <li>CompTIA Security+ - (نوفمبر 2025)</li>
-                        <li>Ethical Hacking / Penetration Testing - (ديسمبر 2025)</li>
+                        <li><i class="fas fa-check-circle"></i> CCNA (Cisco Certified Network Associate) - (Jan 2025)</li>
+                        <li><i class="fas fa-check-circle"></i> FortiGate Certification - (Sep 2025)</li>
+                        <li><i class="fas fa-check-circle"></i> FortiManager (Fortinet) - (Nov 2025)</li>
+                        <li><i class="fas fa-check-circle"></i> CompTIA Security+ - (Nov 2025)</li>
+                        <li><i class="fas fa-check-circle"></i> Ethical Hacking / Penetration Testing - (Dec 2025)</li>
                     </ul>
                 </div>
             </div>
         </section>
 
-        <section id="skills">
-            <h2>المهارات والأدوات</h2>
-            <div class="grid">
+        <section id="skills" class="card">
+            <h2><i class="fas fa-tools icon"></i> Skills & Tools</h2>
+            <div class="grid skills-grid">
                 <div class="grid-item">
-                    <h3>الشبكات والأمن</h3>
+                    <h3><i class="fas fa-network-wired"></i> Networking & Security</h3>
                     <ul>
-                        <li><strong>التوجيه والتبديل:</strong> BGP, OSPF, EIGRP, VLAN, STP</li>
-                        <li><strong>بروتوكولات الأمان:</strong> IPSec, SSL/TLS, IEEE 802.1X</li>
-                        <li><strong>تصميم الشبكات واستكشاف الأخطاء وإصلاحها:</strong> خبرة بمستوى CCNA</li>
-                        <li><strong>إدارة التهديدات:</strong> تقييم الثغرات، اختبار الاختراق</li>
+                        <li><i class="fas fa-long-arrow-alt-right"></i> <strong>Routing & Switching:</strong> BGP, OSPF, EIGRP, VLAN, STP</li>
+                        <li><i class="fas fa-long-arrow-alt-right"></i> <strong>Security Protocols:</strong> IPSec, SSL/TLS, IEEE 802.1X</li>
+                        <li><i class="fas fa-long-arrow-alt-right"></i> <strong>Network Design & Troubleshooting:</strong> CCNA-level expertise</li>
+                        <li><i class="fas fa-long-arrow-alt-right"></i> <strong>Threat Management:</strong> Vulnerability Assessment, Penetration Testing</li>
                     </ul>
                 </div>
                 <div class="grid-item">
-                    <h3>البرمجة والأتمتة</h3>
+                    <h3><i class="fas fa-code"></i> Programming & Automation</h3>
                     <ul>
-                        <li><strong>Python:</strong> أتمتة الأمان، تحليل السجلات</li>
-                        <li><strong>Bash Scripting:</strong> أتمتة Linux</li>
-                        <li><strong>APIs:</strong> تفاعل وتكامل الأجهزة</li>
-                        <li><strong>Git:</strong> التحكم في الإصدارات والتعاون</li>
+                        <li><i class="fas fa-long-arrow-alt-right"></i> <strong>Python:</strong> Security Automation, Log Analysis</li>
+                        <li><i class="fas fa-long-arrow-alt-right"></i> <strong>Bash Scripting:</strong> Linux Automation</li>
+                        <li><i class="fas fa-long-arrow-alt-right"></i> <strong>APIs:</strong> Device Interaction & Integration</li>
+                        <li><i class="fas fa-long-arrow-alt-right"></i> <strong>Git:</strong> Version Control & Collaboration</li>
                     </ul>
                 </div>
                  <div class="grid-item">
-                    <h3>أدوات اختبار وتحليل الأمان</h3>
+                    <h3><i class="fas fa-firewall"></i> Security Testing & Analysis Tools</h3>
                      <ul>
-                        <li><strong>Fortinet:</strong> FortiGate (IPS, Antivirus, Web Filtering), FortiManager</li>
-                        <li><strong>Palo Alto (قيد التعلم):</strong> مفاهيم جدار الحماية من الجيل التالي</li>
-                        <li><strong>Cisco ASA (ملم به):</strong> التكوين الأساسي والإدارة</li>
+                        <li><i class="fas fa-long-arrow-alt-right"></i> <strong>Fortinet:</strong> FortiGate (IPS, Antivirus, Web Filtering), FortiManager</li>
+                        <li><i class="fas fa-long-arrow-alt-right"></i> <strong>Palo Alto (Learning):</strong> Next-Gen Firewall Concepts</li>
+                        <li><i class="fas fa-long-arrow-alt-right"></i> <strong>Cisco ASA (Familiar):</strong> Basic Configuration & Management</li>
                     </ul>
                 </div>
                  <div class="grid-item">
-                    <h3>المهارات الشخصية</h3>
+                    <h3><i class="fas fa-handshake"></i> Soft Skills</h3>
                      <ul>
-                        <li>التواصل مع العملاء</li>
-                        <li>حل المشكلات</li>
-                        <li>إدارة المشاريع</li>
-                        <li>التعلم الذاتي</li>
+                        <li><i class="fas fa-long-arrow-alt-right"></i> Client Communication</li>
+                        <li><i class="fas fa-long-arrow-alt-right"></i> Problem Solving</li>
+                        <li><i class="fas fa-long-arrow-alt-right"></i> Project Management</li>
+                        <li><i class="fas fa-long-arrow-alt-right"></i> Self-Learning</li>
                     </ul>
                 </div>
             </div>
         </section>
 
-        <section id="experience">
-            <h2>الخبرة</h2>
-            <h3>مهندس شبكات وأمن سيبراني (مستقل)</h3>
-            <p>يوليو 2025 – حتى الآن</p>
+        <section id="experience" class="card">
+            <h2><i class="fas fa-briefcase icon"></i> Experience</h2>
+            <div class="experience-item">
+                <h3>Freelance Network & Cybersecurity Engineer</h3>
+                <p class="date">July 2025 – Present</p>
+                </div>
         </section>
         
-        <section id="services">
-            <h2>خدماتي</h2>
-            <div class="grid">
-                <div class="grid-item"><strong>تصميم وتنفيذ أمن الشبكات</strong></div>
-                <div class="grid-item"><strong>أتمتة الأمان والبرمجة النصية</strong></div>
-                <div class="grid-item"><strong>تكوين وإدارة جدار الحماية</strong></div>
-                <div class="grid-item"><strong>الوصول الآمن عن بعد (إعداد VPN)</strong></div>
-                <div class="grid-item"><strong>الاستشارات الفنية والدعم</strong></div>
+        
+        <section id="services" class="card">
+            <h2><i class="fas fa-hand-holding-usd icon"></i> My Services</h2>
+            <div class="grid services-grid">
+                <div class="service-item">
+                    <i class="fas fa-shield-alt fa-2x"></i>
+                    <h3>Network Security Design & Implementation</h3>
+                </div>
+                <div class="service-item">
+                    <i class="fas fa-cogs fa-2x"></i>
+                    <h3>Security Automation & Scripting</h3>
+                </div>
+                <div class="service-item">
+                    <i class="fas fa-server fa-2x"></i>
+                    <h3>Firewall Configuration & Management</h3>
+                </div>
+                <div class="service-item">
+                    <i class="fas fa-lock fa-2x"></i>
+                    <h3>Secure Remote Access (VPN Setup)</h3>
+                </div>
+                <div class="service-item">
+                    <i class="fas fa-headset fa-2x"></i>
+                    <h3>Technical Consulting & Support</h3>
+                </div>
             </div>
         </section>
 
-        <section id="projects">
-            <h2>مشاريع مختارة</h2>
-             <div class="grid">
-                <div class="grid-item">
-                    <h3>VLAN and Inter-VLAN Routing with FortiGate</h3>
-                    <p>قمت بتكوين VLANs على المحولات وتمكين التوجيه بينها، مع دمج جدار حماية FortiGate لتطبيق سياسات الأمان.</p>
+        <section id="projects" class="card">
+            <h2><i class="fas fa-project-diagram icon"></i> Selected Projects</h2>
+            <div class="grid projects-grid">
+                <div class="project-item">
+                    <img src="images/project1.jpg" alt="VLAN Project">
+                    <div class="project-content">
+                        <h3>VLAN and Inter-VLAN Routing with FortiGate</h3>
+                        <p>Configured VLANs on switches and enabled routing between them, integrating a FortiGate firewall to apply security policies.</p>
+                        <a href="#" class="btn-project" target="_blank">View Project <i class="fas fa-arrow-right"></i></a>
+                    </div>
                 </div>
-                <div class="grid-item">
-                    <h3>Implement VPN Solutions with FortiGate</h3>
-                    <p>قمت بتكوين SSL VPN و IPsec VPN على FortiGate، مع دمج حركة مرور VPN مع SD-WAN لتحسين الأداء.</p>
+                <div class="project-item">
+                    <img src="images/project2.jpg" alt="VPN Project">
+                    <div class="project-content">
+                        <h3>Implement VPN Solutions with FortiGate</h3>
+                        <p>Configured SSL VPN and IPsec VPN on FortiGate, integrating VPN traffic with SD-WAN for optimized performance.</p>
+                        <a href="#" class="btn-project" target="_blank">View Project <i class="fas fa-arrow-right"></i></a>
+                    </div>
                 </div>
-            </div>
+                </div>
         </section>
 
-        <section id="achievements">
-            <h2>الإنجازات</h2>
+        <section id="achievements" class="card">
+            <h2><i class="fas fa-trophy icon"></i> Achievements</h2>
             <ul>
-                <li><strong>تنفيذ حلول VPN آمنة:</strong> قمت بتكوين SSL و IPsec VPNs مع FortiGate.</li>
-                <li><strong>تصميم شبكات آمنة:</strong> قمت ببناء شبكة مؤسسية محاكاة مع VLANs و OSPF.</li>
-                <li><strong>حماية الأنظمة:</strong> قمت بتأمين بيئات عملاء متعددة من التهديدات السيبرانية المتقدمة.</li>
+                <li><i class="fas fa-star"></i> <strong>Implemented Secure VPN Solutions:</strong> Configured SSL and IPsec VPNs with FortiGate.</li>
+                <li><i class="fas fa-star"></i> <strong>Designed Secure Networks:</strong> Built a simulated enterprise network with VLANs and OSPF.</li>
+                <li><i class="fas fa-star"></i> <strong>Protected Systems:</strong> Secured multiple client environments from advanced cyber threats.</li>
             </ul>
         </section>
 
-        <section id="contact">
-            <h2>تواصل معي</h2>
-            <p>لا تتردد في التواصل معي عبر المنصات التالية:</p>
-            <p>
-                <a href="https://www.linkedin.com/in/youssefayed" target="_blank">LinkedIn</a> |
-                <a href="https://github.com/yousef-ayed" target="_blank">GitHub</a> |
-                <a href="mailto:youssefayed404@gmail.com">youssefayed404@gmail.com</a>
-            </p>
+        <section id="contact" class="card">
+            <h2><i class="fas fa-headset icon"></i> Contact Me</h2>
+            <p>Feel free to reach out via the following platforms or by email. I'm happy to discuss opportunities or answer your questions.</p>
+            <div class="contact-info">
+                <p><i class="fas fa-envelope"></i> Email: <a href="mailto:youssefayed404@gmail.com">youssefayed404@gmail.com</a></p>
+                <div class="social-links-bottom">
+                    <a href="https://www.linkedin.com/in/youssefayed" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in fa-2x"></i></a>
+                    <a href="https://github.com/yousef-ayed" target="_blank" aria-label="GitHub"><i class="fab fa-github fa-2x"></i></a>
+                </div>
+            </div>
         </section>
-    </div>
+    </main>
 
     <footer>
-        <p>&copy; 2025 يوسف عايد. جميع الحقوق محفوظة.</p>
+        <div class="container">
+            <p>&copy; 2025 Youssef Ayed. All Rights Reserved.</p>
+        </div>
     </footer>
 
 </body>
