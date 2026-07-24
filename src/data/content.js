@@ -16,7 +16,7 @@ export const profile = {
     'Architecting, fortifying, and optimizing resilient enterprise network infrastructures and automated threat detection systems.',
   email: 'youssefayed404@gmail.com',
   github: 'https://github.com/yousef-ayed',
-  linkedin: 'https://www.linkedin.com/feed/',
+  linkedin: 'https://www.linkedin.com/feed/'
   
 }
 
