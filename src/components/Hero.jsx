@@ -38,9 +38,9 @@ export default function Hero() {
             custom={1}
             className="font-display text-4xl sm:text-5xl lg:text-[3.4rem] leading-[1.08] font-semibold tracking-tight text-ink-100"
           >
-            Freelance{' '}
             <span className="text-gradient-cyan">Security Operations</span> &amp; Network
             Infrastructure Engineer
+            
           </motion.h1>
 
           <motion.p
