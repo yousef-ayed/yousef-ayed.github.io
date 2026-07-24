@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import { motion } from 'framer-motion'
-import { Mail, Github, Linkedin, Globe, Send, CheckCircle2 } from 'lucide-react'
+import { Mail, Github, Linkedin, Send, CheckCircle2 } from 'lucide-react'
 import { profile } from '../data/content'
 import { SectionHeading } from './Skills'
 import GridBackground from './GridBackground'
@@ -9,7 +9,6 @@ const links = [
   { icon: Mail, label: 'Email', value: profile.email, href: `mailto:${profile.email}` },
   { icon: Github, label: 'GitHub', value: 'yousef-ayed', href: profile.github },
   { icon: Linkedin, label: 'LinkedIn', value: 'View Profile', href: profile.linkedin },
-  { icon: Globe, label: 'Portfolio Site', value: 'yousef-ayed.github.io', href: profile.site },
 ]
 
 export default function Contact() {
