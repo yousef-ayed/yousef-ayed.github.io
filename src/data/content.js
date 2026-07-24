@@ -11,13 +11,13 @@ import {
 
 export const profile = {
   name: 'Yousef Ayed',
-  role: 'Freelance Security Operations & Network Infrastructure Engineer',
+  role: 'Security Operations & Network Infrastructure Engineer',
   tagline:
     'Architecting, fortifying, and optimizing resilient enterprise network infrastructures and automated threat detection systems.',
   email: 'youssefayed404@gmail.com',
   github: 'https://github.com/yousef-ayed',
   linkedin: 'https://www.linkedin.com/feed/',
-  site: 'https://yousef-ayed.github.io/',
+  
 }
 
 export const terminalLines = [
